@@ -1,0 +1,15 @@
+#
+# FPC1020 Touch sensor driver
+#
+# Copyright (c) 2013,2014 Fingerprint Cards AB <tech@fingerprints.com>
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License Version 2
+# as published by the Free Software Foundation.
+#
+
+# fpc1020 "finger present"
+key 616   FPS_ONENAV_TAP
+key 617   FPS_ONENAV_HOLD
+key 620   FPS_ONENAV_RIGHT
+key 621   FPS_ONENAV_LEFT
