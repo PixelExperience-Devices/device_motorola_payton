@@ -182,6 +182,8 @@ on post-fs
     exec - system system -- /vendor/bin/init.qti.qseecomd.sh
     write /dev/ipa 1
 
+    write /sys/class/graphics/fb0/idle_time 100
+
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
