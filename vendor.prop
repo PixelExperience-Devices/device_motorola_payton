@@ -125,6 +125,9 @@ ro.vendor.audio.sdk.fluencetype=fluence
 # FM
 ro.vendor.fm.use_audio_session=true
 
+# NavBar
+qemu.hw.mainkeys=0
+
 # OEM Unlock reporting
 ro.oem_unlock_supported=1
 
