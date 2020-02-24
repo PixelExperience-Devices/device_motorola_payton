@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <privapp-permissions package="com.moto.actions">
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+    </privapp-permissions>
+</permissions>

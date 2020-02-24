@@ -380,6 +380,10 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.secure_element@1.2.vendor
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/privapp-permissions-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-system.xml
+
 # Recovery
 TARGET_RECOVERY_DENSITY := xhdpi
 
