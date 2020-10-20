@@ -12,3 +12,6 @@ set_prop(vendor_qti_init_shell, qemu_hw_prop)
 
 # Silence DAC denials
 dontaudit vendor_qti_init_shell self:capability { dac_override dac_read_search };
+
+allow qti_init_shell ctl_start_prop:property_service set;
+allow qti_init_shell ctl_stop_prop:property_service set;
