@@ -109,4 +109,7 @@ void vendor_load_properties()
     // Setting carrier prop
     std::string carrier = GetProperty("ro.boot.carrier", "unknown");
     property_override("ro.carrier", carrier.c_str());
+
+    // Misc
+    property_override("ro.apex.updatable", "false");
 }
