@@ -449,6 +449,12 @@ vendor/bin/pm-service
 vendor/lib/libperipheral_client.so
 vendor/lib64/libperipheral_client.so
 
+# Perf - from LA.UM.8.6.2.r1-08600-89xx.0
+system/lib64/libadaptlaunch.so|cf784401fc827e5195d595a6d855ec89ea8c22bf
+system/lib64/libappclassifier.so|d5956c2dc9344ddcca0e78d84c393320c2e0cc97
+system/lib64/libgameoptfeature.so|b135489d253f0a8d7884238fe7887eb85b87745d
+system/lib64/liblearningmodule.so|a9390d0ef1ec82c97a61035ec686c1d094fdca98
+
 # Postprocessing
 vendor/lib64/libdisp-aba.so
 
