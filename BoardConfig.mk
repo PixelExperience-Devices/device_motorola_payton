@@ -63,6 +63,9 @@ BOARD_HAVE_BLUETOOTH_QCOM := true
 # Camera
 USE_CAMERA_STUB := true
 
+# Compile libhwui in performance mode
+HWUI_COMPILE_FOR_PERF := true
+
 # Display
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 TARGET_USES_ION := true
