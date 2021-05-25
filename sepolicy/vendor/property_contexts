@@ -72,3 +72,4 @@ false_touch_quality u:object_r:vendor_fp_prop:s0
 
 # Power
 vendor.powerhal.                        u:object_r:vendor_power_prop:s0
+vendor.powerhal.audio                   u:object_r:vendor_power_prop:s0
