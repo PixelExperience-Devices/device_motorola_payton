@@ -25,7 +25,7 @@
 
     <uses-sdk
         android:minSdkVersion="27"
-        android:targetSdkVersion="27"/>
+        android:targetSdkVersion="27" />
 
     <application
         android:label="MotoPocketMode"
@@ -43,18 +43,6 @@
         <service android:name=".PocketModeService"
                  android:permission="PocketModeService">
         </service>
-
-        <activity android:name="PocketMode"
-                  android:label="PocketMode"
-                  android:excludeFromRecents="true"
-                  android:launchMode="singleInstance"
-                  android:screenOrientation="portrait"
-                  android:windowAnimationStyle="@null"
-                  android:exported="false">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-            </intent-filter>
-        </activity>
 
     </application>
 </manifest>
