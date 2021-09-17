@@ -104,7 +104,6 @@ void InteractionHandler::PerfLock() {
     if (!mHintManager->DoHint("INTERACTION")) {
         ALOGE("%s: do hint INTERACTION failed", __func__);
     }
-    ATRACE_INT("interaction_lock", 1);
 }
 
 void InteractionHandler::PerfRel() {
@@ -112,7 +111,6 @@ void InteractionHandler::PerfRel() {
     if (!mHintManager->EndHint("INTERACTION")) {
         ALOGE("%s: end hint INTERACTION failed", __func__);
     }
-    ATRACE_INT("interaction_lock", 0);
 }
 
 size_t InteractionHandler::CalcTimespecDiffMs(struct timespec start, struct timespec end) {
