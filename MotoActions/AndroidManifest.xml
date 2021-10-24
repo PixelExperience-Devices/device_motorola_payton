@@ -33,14 +33,19 @@
             </intent-filter>
         </provider>
 
-        <receiver android:name="com.moto.actions.BootCompletedReceiver">
+        <receiver 
+            android:name="com.moto.actions.BootCompletedReceiver"
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
 
-        <service android:name="ServiceWrapper" android:permission="ServiceWrapper">
+        <service 
+            android:name="ServiceWrapper" 
+            android:permission="ServiceWrapper"
+            android:exported="false">
             <intent-filter>
                 <action android:name="ServiceWrapper"/>
             </intent-filter>
@@ -56,7 +61,8 @@
             android:name=".ActionsPreferenceActivity"
             android:label="@string/moto_actions_title"
             android:summary="@string/device_gestures_summary"
-            android:theme="@style/MotoActions">
+            android:theme="@style/MotoActions"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
