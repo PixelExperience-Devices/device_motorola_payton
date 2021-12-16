@@ -31,7 +31,6 @@ on early-init
 on init
     # Set up schedtune
     write /dev/stune/foreground/schedtune.prefer_idle 1
-    write /dev/stune/top-app/schedtune.boost 10
     write /dev/stune/top-app/schedtune.prefer_idle 1
 
     # Bring up cpubw governor and set permissions for bw_hwmon nodes
