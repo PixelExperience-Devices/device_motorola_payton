@@ -28,6 +28,9 @@ TARGET_GAPPS_ARCH := arm64
 # Device
 $(call inherit-product, device/motorola/payton/device.mk)
 
+# Quick Tap
+TARGET_SUPPORTS_QUICK_TAP := true
+
 # A/B updater
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
