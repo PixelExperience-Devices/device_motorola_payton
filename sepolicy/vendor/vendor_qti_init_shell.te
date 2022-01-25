@@ -8,9 +8,7 @@ allow vendor_qti_init_shell system_data_file:file { getattr read };
 
 get_prop(vendor_qti_init_shell, moto_boot_prop)
 get_prop(vendor_qti_init_shell, vendor_radio_prop)
-
-# Silence qemu.hw.mainkeys denial that we don't need
-dontaudit vendor_qti_init_shell default_prop:property_service set;
+set_prop(vendor_qti_init_shell, qemu_hw_prop)
 
 # Silence DAC denials
 dontaudit vendor_qti_init_shell self:capability { dac_override dac_read_search };
