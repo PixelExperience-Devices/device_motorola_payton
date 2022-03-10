@@ -102,7 +102,6 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/motorola/payton
 TARGET_KERNEL_CONFIG := lineageos_payton_defconfig
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_CLANG_COMPILE := true
 
 # Kernel additional flags
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
