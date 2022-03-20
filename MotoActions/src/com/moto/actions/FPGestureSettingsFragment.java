@@ -16,7 +16,6 @@
 
 package com.moto.actions;
 
-import android.app.ActionBar;
 import android.os.Bundle;
 import android.content.Context;
 import android.content.SharedPreferences.Editor;

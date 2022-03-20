@@ -18,9 +18,9 @@ package com.moto.actions;
 
 import android.os.Bundle;
 
-import android.preference.PreferenceActivity;
+import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 
-public class GestureSettingsActivity extends PreferenceActivity {
+public class GestureSettingsActivity extends CollapsingToolbarBaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,7 @@ public class GestureSettingsActivity extends PreferenceActivity {
         }
 
             getFragmentManager().beginTransaction()
-                    .replace(android.R.id.content, new GestureSettingsFragment()).commit();
+                .replace(com.android.settingslib.collapsingtoolbar.R.id.content_frame,
+                new GestureSettingsFragment()).commit();
         }
     }

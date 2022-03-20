@@ -17,9 +17,9 @@
 package com.moto.actions;
 
 import android.os.Bundle;
-import android.preference.PreferenceActivity;
+import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 
-public class DozeSettingsActivity extends PreferenceActivity {
+public class DozeSettingsActivity extends CollapsingToolbarBaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +30,7 @@ public class DozeSettingsActivity extends PreferenceActivity {
         }
 
         getFragmentManager().beginTransaction()
-                .replace(android.R.id.content, new DozeSettingsFragment()).commit();
+            .replace(com.android.settingslib.collapsingtoolbar.R.id.content_frame,
+            new DozeSettingsFragment()).commit();
     }
 }

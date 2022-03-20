@@ -13,7 +13,8 @@
      limitations under the License.
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+        android:title="@string/fingerprint_gestures_title">
 
     <SwitchPreference
         android:key="fp_home_scr_off"
