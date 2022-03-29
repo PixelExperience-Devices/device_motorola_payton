@@ -36,6 +36,7 @@ public class MotoActionsSettings implements SharedPreferences.OnSharedPreference
     private static final String GESTURE_CAMERA_ACTION_KEY = "gesture_camera_action";
     private static final String GESTURE_CHOP_CHOP_KEY = "gesture_chop_chop";
     private static final String GESTURE_PICK_UP_KEY = "gesture_pick_up";
+    private static final String GESTURE_POCKET_KEY = "gesture_pocket";
     private static final String GESTURE_IR_WAKEUP_KEY = "gesture_hand_wave";
     private static final String GESTURE_IR_SILENCER_KEY = "gesture_ir_silencer";
     private static final String GESTURE_FLIP_TO_MUTE_KEY = "gesture_flip_to_mute";
@@ -47,6 +48,7 @@ public class MotoActionsSettings implements SharedPreferences.OnSharedPreference
     private boolean mCameraGestureEnabled;
     private boolean mChopChopEnabled;
     private boolean mPickUpGestureEnabled;
+    private boolean mPocketGestureEnabled;
     private boolean mIrWakeUpEnabled;
     private boolean mIrSilencerEnabled;
     private boolean mFlipToMuteEnabled;
@@ -84,6 +86,10 @@ public class MotoActionsSettings implements SharedPreferences.OnSharedPreference
         return isDozeEnabled() && mPickUpGestureEnabled;
     }
 
+    public boolean isPocketGestureEnabled() {
+        return isDozeEnabled() && mPocketGestureEnabled;
+    }
+
     public boolean isIrSilencerEnabled() {
         return mIrSilencerEnabled;
     }
@@ -109,6 +115,7 @@ public class MotoActionsSettings implements SharedPreferences.OnSharedPreference
         mChopChopEnabled = sharedPreferences.getBoolean(GESTURE_CHOP_CHOP_KEY, true);
         mIrWakeUpEnabled = sharedPreferences.getBoolean(GESTURE_IR_WAKEUP_KEY, true);
         mPickUpGestureEnabled = sharedPreferences.getBoolean(GESTURE_PICK_UP_KEY, true);
+        mPocketGestureEnabled = sharedPreferences.getBoolean(GESTURE_POCKET_KEY, true);
         mIrSilencerEnabled = sharedPreferences.getBoolean(GESTURE_IR_SILENCER_KEY, false);
         mFlipToMuteEnabled = sharedPreferences.getBoolean(GESTURE_FLIP_TO_MUTE_KEY, false);
         mLiftToSilenceEnabled = sharedPreferences.getBoolean(GESTURE_LIFT_TO_SILENCE_KEY, false);
@@ -126,6 +133,8 @@ public class MotoActionsSettings implements SharedPreferences.OnSharedPreference
                 mIrWakeUpEnabled = sharedPreferences.getBoolean(GESTURE_IR_WAKEUP_KEY, true);
             } else if (GESTURE_PICK_UP_KEY.equals(key)) {
                 mPickUpGestureEnabled = sharedPreferences.getBoolean(GESTURE_PICK_UP_KEY, true);
+            } else if (GESTURE_POCKET_KEY.equals(key)) {
+                mPocketGestureEnabled = sharedPreferences.getBoolean(GESTURE_POCKET_KEY, true);  
             } else if (GESTURE_IR_SILENCER_KEY.equals(key)) {
                 mIrSilencerEnabled = sharedPreferences.getBoolean(GESTURE_IR_SILENCER_KEY, false);
             } else if (GESTURE_FLIP_TO_MUTE_KEY.equals(key)) {

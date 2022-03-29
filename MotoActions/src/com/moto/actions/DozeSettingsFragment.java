@@ -33,12 +33,14 @@ public class DozeSettingsFragment extends PreferenceFragment {
     
     private SwitchPreference mHandwavePreference;
     private SwitchPreference mPickupPreference;
+    private SwitchPreference mPocketPreference;
 
     private TextView mSwitchBarText;
     private Switch mAmbientDisplaySwitch;
 
     private String KEY_GESTURE_HAND_WAVE = "gesture_hand_wave";
     private String KEY_GESTURE_PICK_UP = "gesture_pick_up";
+    private String GESTURE_POCKET_KEY = "gesture_pocket";
     
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -75,6 +77,8 @@ public class DozeSettingsFragment extends PreferenceFragment {
         boolean dozeEnabled = MotoActionsSettings.isDozeEnabled(getActivity().getContentResolver());
         mHandwavePreference = (SwitchPreference) findPreference(KEY_GESTURE_HAND_WAVE);
         mPickupPreference = (SwitchPreference) findPreference(KEY_GESTURE_PICK_UP);
+        mPocketPreference = (SwitchPreference) findPreference(GESTURE_POCKET_KEY);
+
         updatePrefs(dozeEnabled);
     }
 
@@ -92,6 +96,7 @@ public class DozeSettingsFragment extends PreferenceFragment {
     private void updatePrefs(boolean enabled){
         mHandwavePreference.setEnabled(enabled);
         mPickupPreference.setEnabled(enabled);
+        mPocketPreference.setEnabled(enabled);
     }
 
     private boolean enableDoze(boolean enable) {
