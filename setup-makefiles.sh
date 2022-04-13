@@ -9,8 +9,8 @@
 
 set -e
 
-DEVICE=payton
-VENDOR=motorola
+export DEVICE=payton
+export VENDOR=motorola
 
 INITIAL_COPYRIGHT_YEAR=2017
 

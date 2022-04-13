@@ -9,8 +9,8 @@
 
 set -e
 
-DEVICE=payton
-VENDOR=motorola
+export DEVICE=payton
+export VENDOR=motorola
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
@@ -64,6 +64,18 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        # Load ZAF configs from vendor
+        vendor/lib/libzaf_core.so)
+            sed -i -e 's|/system/etc/zaf|/vendor/etc/zaf|g' "${2}"
+            ;;
+        # Add uhid group for fingerprint service
+        vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc)
+            sed -i -e 's|system input|system uhid input|g' "${2}"
+            ;;
+        # Fix camera recording
+        vendor/lib/libmmcamera2_pproc_modules.so)
+            sed -i -e 's|ro.product.manufacturer|ro.product.nopefacturer|g' "${2}"
+            ;;
         # Fix xml version
         product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml | product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml)
             sed -i 's|xml version="2.0"|xml version="1.0"|g' "${2}"

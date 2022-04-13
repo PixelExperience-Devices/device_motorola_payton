@@ -1,10 +1,11 @@
 #
-# system_ext props for sdm660
+# system_ext props for payton
 #
 
 # Audio
 audio.offload.disable=false
 ro.qc.sdk.audio.ssr=false
+ro.qc.sdk.audio.fluencetype=fluence
 
 # Bluetooth
 bt.max.hfpclient.connections=1
@@ -45,3 +46,5 @@ renderthread.skia.reduceopstasksplitting=true
 
 # Time daemon
 persist.vendor.delta_time.enable=true
+
+
