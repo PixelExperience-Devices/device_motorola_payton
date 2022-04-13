@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.light@2.0-service.sdm660"
+#define LOG_TAG "android.hardware.light@2.0-service.payton"
 
 #include <hidl/HidlTransportSupport.h>
 

@@ -9,6 +9,11 @@
 
 set -e
 
+DEVICE=payton
+VENDOR=motorola
+
+INITIAL_COPYRIGHT_YEAR=2017
+
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
@@ -22,8 +27,8 @@ if [ ! -f "${HELPER}" ]; then
 fi
 source "${HELPER}"
 
-# Initialize the helper for common
-setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true
+# Initialize the helper
+setup_vendor "$DEVICE" "$VENDOR" "$ANDROID_ROOT" true
 
 # Warning headers and guards
 write_headers "beckham chef evert lake payton"

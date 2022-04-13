@@ -14,17 +14,13 @@
 // limitations under the License.
 //
 
-motorola_sdm660_init_library_static {
-    name: "libinit_sdm660",
+cc_library_static {
+    name: "libinit_payton",
     recovery_available: true,
-    srcs: [
-        "init_sdm660.cpp",
-        "DeviceLibinit.cpp"
-    ],
+    srcs: ["init_payton.cpp"],
     include_dirs: [
         "system/libbase/include",
-        "system/core/init",
-        "device/motorola/sdm660-common"
+        "system/core/init"
     ],
     shared_libs: [
         "libbase",
