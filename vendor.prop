@@ -85,6 +85,7 @@ vendor.audio.offload.min.duration.secs=60
 # Bluetooth
 persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxhd-aac
 vendor.qcom.bluetooth.soc=cherokee
+bluetooth.device.default_name=Moto X4
 
 # Camera
 persist.vendor.camera.expose.aux=1
