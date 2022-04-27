@@ -47,3 +47,11 @@ on boot
     chown system system /sys/homebutton/key_screenoff_dbltap
     chown system system /sys/homebutton/key_screenoff_left
     chown system system /sys/homebutton/key_screenoff_right
+
+# Start qcrild
+    start vendor.qcrild
+
+# Start secondary qcrild instance if dual sim property set
+on property:persist.radio.multisim.config=dsds
+    start vendor.qcrild2
+        

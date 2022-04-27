@@ -346,15 +346,11 @@ case "$target" in
             case "$zygote" in
             "zygote64_32")
                 if [ "$modem" \< "3.1" ]; then
-                    setprop vendor.rild.libpath "/vendor/lib64/libril-qc-qmi-1.so"
-                else
                     setprop vendor.rild.libpath "/vendor/lib64/libril-qc-hal-qmi.so"
                 fi
                 ;;
             "zygote32")
                 if [ "$modem" \< "3.1" ]; then
-                    setprop vendor.rild.libpath "/vendor/lib/libril-qc-qmi-1.so"
-                else
                     setprop vendor.rild.libpath "/vendor/lib/libril-qc-hal-qmi.so"
                 fi
                 ;;

@@ -219,7 +219,6 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.moto.rc \
     init.power.rc \
-    init.class_main.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.sensors.sh \

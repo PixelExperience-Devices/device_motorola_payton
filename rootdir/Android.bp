@@ -42,12 +42,6 @@ prebuilt_etc {
 }
 
 sh_binary {
-    name: "init.class_main.sh",
-    src: "bin/init.class_main.sh",
-    soc_specific: true,
-}
-
-sh_binary {
     name: "init.mmi.usb.sh",
     src: "bin/init.mmi.usb.sh",
     soc_specific: true,

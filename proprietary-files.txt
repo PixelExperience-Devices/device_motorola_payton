@@ -562,6 +562,7 @@ vendor/lib64/libqmimotext.so
 vendor/lib64/libqrtr.so
 vendor/lib64/libqsocket.so
 vendor/lib64/libril-qc-hal-qmi.so
+vendor/lib64/android.hardware.radio.config@1.1.so:vendor/lib64/android.hardware.radio.config@1.1_shim.so
 vendor/lib64/libril-qc-ltedirectdisc.so
 vendor/lib64/libril-qc-qmi-1.so
 vendor/lib64/libril-qc-radioconfig.so

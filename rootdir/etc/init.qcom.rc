@@ -821,12 +821,6 @@ on property:vendor.bluetooth.startbtlogger=false
 on property:vendor.media.target.version=*
     setprop vendor.sys.media.target.version ${vendor.media.target.version}
 
-service vendor.qcom-c_main-sh /vendor/bin/init.class_main.sh
-    class main
-    user root
-    group root system
-    oneshot
-
 on property:vold.decrypt=trigger_restart_framework
     start vendor.qcom-c_main-sh
     start vendor.wcnss-service
