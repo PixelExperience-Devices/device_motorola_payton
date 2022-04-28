@@ -426,8 +426,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcutils_shim \
     libqsapshim \
-    libmemset_shim \
-    libshims_camera
+    libmemset_shim
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
