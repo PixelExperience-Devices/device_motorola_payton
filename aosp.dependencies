@@ -1,0 +1,13 @@
+[
+  {
+    "repository": "kernel_motorola_payton",
+    "target_path": "kernel/motorola/payton",
+    "branch": "twelve"
+  },
+  {
+    "repository": "vendor_motorola_payton",
+    "target_path": "vendor/motorola/payton",
+    "branch": "twelve",
+    "remote": "pixel-devices-blobs"
+  }
+]
