@@ -9,5 +9,11 @@
     "target_path": "vendor/motorola/payton",
     "branch": "twelve",
     "remote": "pixel-devices-blobs"
+  },
+  {
+    "repository": "system_qcom",
+    "target_path": "system/qcom",
+    "remote": "pixel",
+    "branch": "twelve"
   }
 ]
