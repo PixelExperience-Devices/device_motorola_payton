@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.moto.actions"
+    xmlns:tools="http://schemas.android.com/tools"
     android:sharedUserId="android.uid.system"
     >
 
@@ -20,6 +21,11 @@
         android:label="@string/moto_actions_title"
         android:icon="@drawable/ic_gesture"
         android:persistent="true">
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            tools:replace="android:authorities"/>
 
         <provider
             android:name=".MotoActionsSearchIndexablesProvider"
