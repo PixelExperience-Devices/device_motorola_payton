@@ -115,6 +115,11 @@ function blob_fixup() {
             patchelf --set-soname "android.hardware.radio.config@1.1_shim.so" "${2}"
             sed -i -e 's|android.hardware.radio.config@1.1::IRadioConfig\x00|android.hardware.radio.config@1.0::IRadioConfig\x00|g' "${2}" 
             ;;
+        # Use VNDK 32 libhidlbase
+        vendor/lib64/com.fingerprints.extension@1.0_vendor.so)
+            "${PATCHELF_0_8}" --remove-needed "libhidlbase.so" "${2}"
+            sed -i "s/libhidltransport.so/libhidlbase-v32.so\x00/" "${2}"
+            ;;
     esac
 }
 
