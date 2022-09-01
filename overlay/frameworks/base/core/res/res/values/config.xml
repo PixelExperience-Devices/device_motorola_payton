@@ -446,4 +446,6 @@
         <item>com.moto.actions.KeyHandler</item>
     </string-array>
 
+    <!-- The max scale for the wallpaper when it's zoomed in -->
+    <item name="config_wallpaperMaxScale" format="float" type="dimen">1.10</item>
 </resources>
