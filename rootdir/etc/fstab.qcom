@@ -6,7 +6,7 @@
 # Currently we dont have e2fsck compiled. So fs check would failed.
 
 #<src>                                   <mnt_point>        <type> <mnt_flags and options>                          <fs_mgr_flags>
-/dev/block/bootdevice/by-name/system     /                  ext4   ro,barrier=1,discard                             wait,verify,slotselect
+/dev/block/bootdevice/by-name/system     /                  ext4   ro,barrier=1,discard                             wait,slotselect
 /dev/block/bootdevice/by-name/userdata   /data              ext4   nobarrier,noatime,nosuid,nodev,discard,data=ordered,noauto_da_alloc   wait,check,formattable,latemount,fileencryption=ice,reservedsize=128M
 /devices/soc/c084000.sdhci/mmc_host*     auto               auto   defaults                                         wait,voldmanaged=sdcard1:auto,encryptable=userdata
 /dev/block/zram0                         none               swap   defaults                                         zramsize=70%,max_comp_streams=8
