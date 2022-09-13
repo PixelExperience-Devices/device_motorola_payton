@@ -34,7 +34,6 @@ import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraCharacteristics;
 import android.hardware.camera2.CameraManager;
 import android.hardware.input.InputManager;
-import android.media.AudioAttributes;
 import android.media.session.MediaSessionLegacyHelper;
 import android.net.Uri;
 import android.os.Bundle;
@@ -49,6 +48,7 @@ import android.os.SystemClock;
 import android.os.UserHandle;
 import android.os.VibrationEffect;
 import android.os.Vibrator;
+import android.os.VibrationAttributes;
 import android.provider.MediaStore;
 import android.provider.Settings;
 import android.util.Log;
@@ -78,9 +78,8 @@ public class KeyHandler implements DeviceKeyHandler {
 
     private static final String GESTURE_WAKEUP_REASON = "keyhandler-gesture-wakeup";
     private static final int GESTURE_WAKELOCK_DURATION = 3000;
-    private static final AudioAttributes VIBRATION_ATTRIBUTES = new AudioAttributes.Builder()
-            .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
-            .setUsage(AudioAttributes.USAGE_ASSISTANCE_SONIFICATION)
+    private static final VibrationAttributes VIBRATION_ATTRIBUTES = new VibrationAttributes.Builder()
+            .setUsage(VibrationAttributes.USAGE_TOUCH)
             .build();
     private final Context mContext;
     private final PowerManager mPowerManager;
