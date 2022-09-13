@@ -3,8 +3,4 @@
     <privapp-permissions package="com.moto.actions">
         <permission name="android.permission.MODIFY_PHONE_STATE"/>
     </privapp-permissions>
-
-    <privapp-permissions package="org.lineageos.pocketmode">
-        <permission name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS"/>
-    </privapp-permissions>
 </permissions>
