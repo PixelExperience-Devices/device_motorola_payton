@@ -117,6 +117,7 @@
 
     <!-- Update description later -->
     <item name="bluetooth.at">2</item>
+    <item name="bluetooth.controller.voltage">3300</item>
 
     <!-- Additional power used when GPS is acquiring a signal -->
     <item name="gps.on">81.6</item>
