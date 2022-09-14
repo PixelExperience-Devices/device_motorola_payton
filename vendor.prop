@@ -85,6 +85,8 @@ vendor.voice.path.for.pcm.voip=false
 vendor.audio.offload.min.duration.secs=60
 
 # Bluetooth
+bluetooth.hardware.power.operating_voltage_mv=3300
+
 persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxhd-aac
 vendor.qcom.bluetooth.soc=cherokee
 bluetooth.device.default_name=Moto X4
