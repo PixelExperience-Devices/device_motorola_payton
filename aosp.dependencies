@@ -2,18 +2,18 @@
   {
     "repository": "kernel_motorola_payton",
     "target_path": "kernel/motorola/payton",
-    "branch": "twelve"
+    "branch": "thirteen"
   },
   {
     "repository": "vendor_motorola_payton",
     "target_path": "vendor/motorola/payton",
-    "branch": "twelve",
+    "branch": "thirteen",
     "remote": "pixel-devices-blobs"
   },
   {
     "repository": "system_qcom",
     "target_path": "system/qcom",
     "remote": "pixel",
-    "branch": "twelve"
+    "branch": "thirteen"
   }
 ]
