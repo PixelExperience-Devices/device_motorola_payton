@@ -31,6 +31,9 @@ $(call inherit-product, device/motorola/payton/device.mk)
 # Quick Tap
 TARGET_SUPPORTS_QUICK_TAP := true
 
+# Do not ship live wallpapers
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+
 # A/B updater
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
