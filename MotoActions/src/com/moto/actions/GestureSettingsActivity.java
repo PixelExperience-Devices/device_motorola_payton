@@ -31,7 +31,7 @@ public class GestureSettingsActivity extends CollapsingToolbarBaseActivity {
         }
 
             getFragmentManager().beginTransaction()
-                .replace(com.android.settingslib.collapsingtoolbar.R.id.content_frame,
+                .replace(com.android.settingslib.widget.R.id.content_frame,
                 new GestureSettingsFragment()).commit();
         }
     }

@@ -30,7 +30,7 @@ public class DozeSettingsActivity extends CollapsingToolbarBaseActivity {
         }
 
         getFragmentManager().beginTransaction()
-            .replace(com.android.settingslib.collapsingtoolbar.R.id.content_frame,
+            .replace(com.android.settingslib.widget.R.id.content_frame,
             new DozeSettingsFragment()).commit();
     }
 }
