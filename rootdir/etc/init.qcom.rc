@@ -175,8 +175,7 @@ on post-fs
     chmod 0660 /sys/class/capsense/calibrate
 
     # Setting Swappiness
-    write /proc/sys/vm/swappiness 60
-    setprop sys.sysctl.swappiness 60
+    write /proc/sys/vm/swappiness 90
 
     start vendor.qseecomd
     exec - system system -- /vendor/bin/init.qti.qseecomd.sh
