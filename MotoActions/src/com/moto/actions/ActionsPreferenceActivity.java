@@ -30,6 +30,6 @@ public class ActionsPreferenceActivity extends CollapsingToolbarBaseActivity {
         }
 
             getFragmentManager().beginTransaction()
-                .replace(com.android.settingslib.collapsingtoolbar.R.id.content_frame, new ActionsPreferenceFragment()).commit();
+                .replace(com.android.settingslib.widget.R.id.content_frame, new ActionsPreferenceFragment()).commit();
         }
     }
