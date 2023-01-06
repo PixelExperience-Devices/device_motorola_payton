@@ -871,7 +871,7 @@
 		<path name="AOV" />
 		<ctl name="IN1R Mux" value="B" />
 		<ctl name="IN1R Digital Volume" value="142" />
-		<ctl name="IN1R Volume" value="19" />
+		<ctl name="IN1R Volume" value="20" />
 		<ctl name="ISRC2DEC4 Input 1" value="IN1R" />
 		<ctl name="SLIMTX1 Input 1" value="ISRC2DEC4" />
 	</path>
