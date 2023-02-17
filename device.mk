@@ -459,9 +459,8 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    Settings \
-    SystemUI
-
+    Settings
+    
 # Telephony
 PRODUCT_PACKAGES += \
     CarrierConfigOverlay \
