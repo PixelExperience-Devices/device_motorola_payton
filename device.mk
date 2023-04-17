@@ -111,7 +111,8 @@ PRODUCT_PACKAGES += \
     camera.device@3.2-impl \
     libbson.vendor \
     libxml2 \
-    vendor.qti.hardware.camera.device@1.0:64
+    vendor.qti.hardware.camera.device@1.0:64 \
+    Aperture
 
 # Cgroup and task_profiles
 PRODUCT_COPY_FILES += \
