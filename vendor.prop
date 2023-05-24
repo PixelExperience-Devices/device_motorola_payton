@@ -120,7 +120,6 @@ debug.media.codec2=2
 vendor.display.enable_default_color_mode=1
 
 # Display
-debug.sf.disable_client_composition_cache=1
 debug.sf.disable_backpressure=1
 vendor.gralloc.enable_fb_ubwc=1
 dev.pm.dyn_samplingrate=1
